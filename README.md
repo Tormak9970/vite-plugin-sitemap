@@ -22,7 +22,7 @@ Create a `vite.config.ts` [configuration file](https://vitejs.dev/config/#config
 
 ```js
 import { defineConfig } from 'vite'
-import {VitePluginSitemap} from 'vite-plugin-sitemap';
+import { VitePluginSitemap } from 'vite-plugin-sitemap';
 
 const routes = [
   { path: '/', name: 'Home' },

@@ -1,6 +1,6 @@
 {
-  "name": "vite-plugin-sitemap",
-  "version": "1.0.0",
+  "name": "@tormak/vite-plugin-sitemap",
+  "version": "1.1.0",
   "description": "Automatic Sitemap generation for Vite projects, based on provided routes",
 
   "files": ["dist"],
@@ -24,7 +24,6 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "postinstall": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
