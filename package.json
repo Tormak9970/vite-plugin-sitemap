@@ -1,0 +1,45 @@
+{
+  "name": "vite-plugin-sitemap",
+  "version": "1.0.0",
+  "description": "Automatic Sitemap generation for Vite projects, based on provided routes",
+
+  "files": ["dist"],
+  "main": "dist/vite-plugin-sitemap.umd.js",
+  "module": "./dist/vite-plugin-sitemap.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/vite-plugin-sitemap.es.js",
+      "require": "./dist/vite-plugin-sitemap.umd.js"
+    }
+  },
+  "types": "src/index.d.ts",
+
+  "dependencies": {
+    "vite": "^2.9.1"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.23",
+    "vite-plugin-inspect": "^0.4.3"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "postinstall": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tormak9970/vite-plugin-sitemap.git"
+  },
+  "keywords": [
+    "vite-plugin",
+    "sitemap",
+    "extendable"
+  ],
+  "author": "Travis Lane",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Tormak9970/vite-plugin-sitemap/issues"
+  },
+  "homepage": "https://github.com/Tormak9970/vite-plugin-sitemap"
+}
