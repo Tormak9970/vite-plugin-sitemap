@@ -7,25 +7,12 @@
     "target": "esnext",
     "module": "esnext",
     "moduleResolution": "node",
-
-    "isolatedModules": true,
     "esModuleInterop": true,
-    "skipLibCheck": true,
     
     "baseUrl": ".",
-    "sourceMap": true,
-    /**
-      Svelte Preprocess cannot figure out whether you have a value or a type, so tell TypeScript
-      to enforce using `import type` instead of `import` for Types.
-     */
-    "importsNotUsedAsValues": "error",
 
-    "forceConsistentCasingInFileNames": true,
-    "useDefineForClassFields": true,
     "allowJs": true,
-    "checkJs": true,
-    
-    "declaration": true
+    "checkJs": true
   },
   "include": [
     "src/**/*.d.ts",

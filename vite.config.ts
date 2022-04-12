@@ -4,23 +4,13 @@ import { defineConfig } from 'vite'
 export default defineConfig({
     build: {
         lib: {
-            entry: path.resolve(__dirname, 'entry.js'),
+            entry: path.resolve(__dirname, 'exports.js'),
             name: 'VitePluginSitemap',
         },
         rollupOptions: {
-            // make sure to externalize deps that shouldn't be bundled
-            // into your library
-            external: [
-                'vite',
-                'fs'
-            ],
+            external: [ "fs" ],
             output: {
-                // Provide global variables to use in the UMD build
-                // for externalized deps
-                globals: {
-                    fs: 'fs',
-                    vite: 'Vite'
-                }
+                globals: { fs: "fs" }
             }
         }
     }
