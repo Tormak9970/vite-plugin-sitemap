@@ -1,6 +1,7 @@
 # vite-plugin-sitemap
 
 Automatic sitemap generation for Vite, based on a provided routes object, and optional generation function.
+(Based on an old rollup plugin, [rollup-plugin-sitemap](https://github.com/JoaoSouMoreira/rollup-plugin-sitemap))
 
 ## Requirements
 
@@ -11,7 +12,7 @@ This plugin requires an [LTS](https://github.com/nodejs/Release) Node version (v
 Using npm:
 
 ```console
-npm install --save-dev vite-plugin-sitemap
+npm install --save-dev @tormak/vite-plugin-sitemap
 ```
 
 ## Usage
@@ -22,7 +23,7 @@ Create a `vite.config.ts` [configuration file](https://vitejs.dev/config/#config
 
 ```js
 import { defineConfig } from 'vite'
-import { VitePluginSitemap } from 'vite-plugin-sitemap';
+import { VitePluginSitemap } from '@tormak/vite-plugin-sitemap';
 
 const routes = [
   { path: '/', name: 'Home' },
