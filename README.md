@@ -1,6 +1,7 @@
 # vite-plugin-sitemap
 
 Automatic sitemap generation for Vite, based on a provided routes object, and optional generation function.
+
 (Based on an old rollup plugin, [rollup-plugin-sitemap](https://github.com/JoaoSouMoreira/rollup-plugin-sitemap))
 
 ## Requirements
