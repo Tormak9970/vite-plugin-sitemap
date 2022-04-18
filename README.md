@@ -1,3 +1,7 @@
+![npm (scoped)](https://img.shields.io/npm/v/@tormak/vite-plugin-sitemap?label=version&logo=npm&color=red)
+![npm](https://img.shields.io/npm/dm/@tormak/vite-plugin-sitemap?logo=npm)
+![](https://img.shields.io/static/v1?label=ecosystem&message=Vite&color=blue)
+
 # vite-plugin-sitemap
 
 Automatic sitemap generation for Vite, based on a provided routes object, and optional generation function.
